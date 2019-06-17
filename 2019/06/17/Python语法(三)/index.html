@@ -7,17 +7,17 @@
   
   <title>Python语法(三) | 歌白尼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##函数定义  123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    ##参数 12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;qu">
+  <meta name="description" content="函数定义 123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    参数12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;quot;,&amp;q">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python语法(三)">
 <meta property="og:url" content="http://yoursite.com/2019/06/17/Python语法(三)/index.html">
 <meta property="og:site_name" content="歌白尼的博客">
-<meta property="og:description" content="##函数定义  123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    ##参数 12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;qu">
+<meta property="og:description" content="函数定义 123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    参数12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;quot;,&amp;q">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-17T14:57:27.739Z">
+<meta property="og:updated_time" content="2019-06-17T15:01:20.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python语法(三)">
-<meta name="twitter:description" content="##函数定义  123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    ##参数 12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;qu">
+<meta name="twitter:description" content="函数定义 123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    参数12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;quot;,&amp;q">
   
     <link rel="alternate" href="/atom.xml" title="歌白尼的博客" type="application/atom+xml">
   
@@ -86,27 +86,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##函数定义</p>
-<ul>
+        <h2 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h2><ul>
 <li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def shuchu():</span><br><span class="line">  print(&quot;我在输出&quot;)</span><br><span class="line">shuchu()</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p>##参数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def hello(person,me) :</span><br><span class="line"></span><br><span class="line">    print(&quot;hello,&#123;0&#125;,i am &#123;1&#125;&quot;.format(person, me))</span><br><span class="line">    </span><br><span class="line">hello(&quot;zhangsan&quot;,&quot;libai&quot;)</span><br></pre></td></tr></table></figure>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def hello(person,me) :</span><br><span class="line"></span><br><span class="line">    print(&quot;hello,&#123;0&#125;,i am &#123;1&#125;&quot;.format(person, me))</span><br><span class="line">    </span><br><span class="line">hello(&quot;zhangsan&quot;,&quot;libai&quot;)</span><br></pre></td></tr></table></figure>
 
-<p>##返回值</p>
-<p>###无论有无返回值都用return</p>
-<p>###无返回值时return None</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def bijiao(a):</span><br><span class="line">    if a&gt;250:</span><br><span class="line">        return &quot;我大&quot;</span><br><span class="line">    elif a&lt;250:</span><br><span class="line">        return &quot;你大&quot;</span><br><span class="line">    else :</span><br><span class="line">        return &quot;你是250&quot;</span><br><span class="line">print(bijiao(300))</span><br><span class="line">print(bijiao(250))</span><br><span class="line">print(bijiao(100))</span><br></pre></td></tr></table></figure>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><h3 id="无论有无返回值都用return"><a href="#无论有无返回值都用return" class="headerlink" title="无论有无返回值都用return"></a>无论有无返回值都用return</h3><h3 id="无返回值时return-None"><a href="#无返回值时return-None" class="headerlink" title="无返回值时return None"></a>无返回值时return None</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def bijiao(a):</span><br><span class="line">    if a&gt;250:</span><br><span class="line">        return &quot;我大&quot;</span><br><span class="line">    elif a&lt;250:</span><br><span class="line">        return &quot;你大&quot;</span><br><span class="line">    else :</span><br><span class="line">        return &quot;你是250&quot;</span><br><span class="line">print(bijiao(300))</span><br><span class="line">print(bijiao(250))</span><br><span class="line">print(bijiao(100))</span><br></pre></td></tr></table></figure>
 
-<p>##help<br><code>help(print)</code></p>
+<h2 id="help"><a href="#help" class="headerlink" title="help"></a>help</h2><p><code>help(print)</code></p>
 <p><code>help(bijiao)</code></p>
-<p>##九九乘法表</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for r in range(1,10):</span><br><span class="line">    for c in range(1,r+1):</span><br><span class="line">        print(&quot;r*c=&#123;0&#125;&quot;.format(r*c),end=&quot;  &quot;)</span><br><span class="line">    print(&quot;&quot;)</span><br></pre></td></tr></table></figure>
+<h2 id="九九乘法表"><a href="#九九乘法表" class="headerlink" title="九九乘法表"></a>九九乘法表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for r in range(1,10):</span><br><span class="line">    for c in range(1,r+1):</span><br><span class="line">        print(&quot;r*c=&#123;0&#125;&quot;.format(r*c),end=&quot;  &quot;)</span><br><span class="line">    print(&quot;&quot;)</span><br></pre></td></tr></table></figure>
 
-<p>##函数文档</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&apos;&apos;&apos;</span><br><span class="line">    这是文档</span><br><span class="line">&apos;&apos;&apos;</span><br></pre></td></tr></table></figure>
+<h2 id="函数文档"><a href="#函数文档" class="headerlink" title="函数文档"></a>函数文档</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&apos;&apos;&apos;</span><br><span class="line">    这是文档</span><br><span class="line">&apos;&apos;&apos;</span><br></pre></td></tr></table></figure>
 
 
       
