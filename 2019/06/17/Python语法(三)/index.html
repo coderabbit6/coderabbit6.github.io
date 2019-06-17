@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Python语法(三) | 歌白尼的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#函数定义  123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    #参数 12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;quot">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python语法(三)">
+<meta property="og:url" content="http://yoursite.com/2019/06/17/Python语法(三)/index.html">
+<meta property="og:site_name" content="歌白尼的博客">
+<meta property="og:description" content="#函数定义  123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    #参数 12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;quot">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-17T14:50:36.877Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python语法(三)">
+<meta name="twitter:description" content="#函数定义  123def shuchu():  print(&amp;quot;我在输出&amp;quot;)shuchu()    #参数 12345def hello(person,me) :    print(&amp;quot;hello,&amp;#123;0&amp;#125;,i am &amp;#123;1&amp;#125;&amp;quot;.format(person, me))    hello(&amp;quot;zhangsan&amp;quot">
+  
+    <link rel="alternate" href="/atom.xml" title="歌白尼的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">歌白尼的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Python语法(三)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/17/Python语法(三)/" class="article-date">
+  <time datetime="2019-06-17T13:13:45.000Z" itemprop="datePublished">2019-06-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python语法(三)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#函数定义</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def shuchu():</span><br><span class="line">  print(&quot;我在输出&quot;)</span><br><span class="line">shuchu()</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>#参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def hello(person,me) :</span><br><span class="line"></span><br><span class="line">    print(&quot;hello,&#123;0&#125;,i am &#123;1&#125;&quot;.format(person, me))</span><br><span class="line">    </span><br><span class="line">hello(&quot;zhangsan&quot;,&quot;libai&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>#返回值</p>
+<p>###无论有无返回值都用return</p>
+<p>###无返回值时return None</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def bijiao(a):</span><br><span class="line">    if a&gt;250:</span><br><span class="line">        return &quot;我大&quot;</span><br><span class="line">    elif a&lt;250:</span><br><span class="line">        return &quot;你大&quot;</span><br><span class="line">    else :</span><br><span class="line">        return &quot;你是250&quot;</span><br><span class="line">print(bijiao(300))</span><br><span class="line">print(bijiao(250))</span><br><span class="line">print(bijiao(100))</span><br></pre></td></tr></table></figure>
+
+<p>#help<br><code>help(print)</code></p>
+<p><code>help(bijiao)</code></p>
+<p>#九九乘法表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for r in range(1,10):</span><br><span class="line">    for c in range(1,r+1):</span><br><span class="line">        print(&quot;r*c=&#123;0&#125;&quot;.format(r*c),end=&quot;  &quot;)</span><br><span class="line">    print(&quot;&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>#函数文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&apos;&apos;&apos;</span><br><span class="line">    这是文档</span><br><span class="line">&apos;&apos;&apos;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/17/Python语法(三)/" data-id="cjx0hvdva0006y4vt4l9mjyqo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/06/17/Python语法(四)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Python语法(四)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/06/17/Python语法(二)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python语法(二)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/17/Python语法(四)/">Python语法(四)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/17/Python语法(三)/">Python语法(三)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/17/Python语法(二)/">Python语法(二)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/17/Python语法(一)/">Python语法(一)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/15/第一个博客/">第一个博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
