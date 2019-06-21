@@ -62,6 +62,121 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-JS相关" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/21/JS相关/" class="article-date">
+  <time datetime="2019-06-21T15:48:23.000Z" itemprop="datePublished">2019-06-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/21/JS相关/">JS相关以及Ajax</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><ul>
+<li>弱类型语言<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var name = 1;</span><br><span class="line">var age = &quot;张三&quot;；</span><br><span class="line">var x = 19；</span><br><span class="line"></span><br><span class="line">document.write(isNaN(NaN)+&quot;&lt;br&gt;&quot;);</span><br><span class="line">document.write(isNaN(10)+&quot;&lt;br&gt;&quot;);</span><br><span class="line">var num1 = Number(&quot;hello&quot;);</span><br><span class="line">var num2 = Number(&quot; &quot;);</span><br><span class="line">var num3 = Number(&quot;0000&quot;);</span><br><span class="line">var num4 = Number(false);</span><br><span class="line"></span><br><span class="line">document.write(num1+&quot;&lt;br&gt;&quot;);</span><br><span class="line">document.write(num2+&quot;&lt;br&gt;&quot;);</span><br><span class="line">document.write(num3+&quot;&lt;br&gt;&quot;);</span><br><span class="line">document.write(num4+&quot;&lt;br&gt;&quot;);</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li>类型转换<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a.toString();</span><br><span class="line"></span><br><span class="line">a.toString(2); //转换为二进制数</span><br><span class="line"></span><br><span class="line">a.toString(16); //转换为十六进制数</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var a1 = new Array();</span><br><span class="line">var a2 = new Array(4);</span><br><span class="line">var a3 = new Array(4,&quot;hello&quot;,new Date(),true,4.5);</span><br><span class="line"></span><br><span class="line">for(var i = 0;i&lt;a3.length;i++)&#123;</span><br><span class="line">		document.write(a[3]+&quot;&lt;br&gt;&quot;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a2[0]= 1;</span><br><span class="line">a2[1] = 4.7;</span><br><span class="line">a2[2] = &quot;你好！&quot;</span><br><span class="line"> for(var i = 0;i&lt;a2.length;i++)&#123;</span><br><span class="line">		document.write(a3[i]+&quot;&lt;br&gt;&quot;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>控制台輸出<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log();</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><ul>
+<li><p>分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if(a&lt;10)&#123;</span><br><span class="line">     pass;</span><br><span class="line">&#125;else&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取时间信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   var date1 = new Date();</span><br><span class="line">   </span><br><span class="line">   date1.getDate();//日期</span><br><span class="line">   date1.getDay();//星期</span><br><span class="line">   date1.getMilliseconds();</span><br><span class="line">   date1.getMinutes();</span><br><span class="line">   </span><br><span class="line">   ```   </span><br><span class="line">   </span><br><span class="line">#### 面向对象基础</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>ver person = {</p>
+<pre><code>name:&quot;张三&quot;，
+age:20,
+gender:&quot;女&quot;，
+eat:function(stuff){
+    document.write(&quot;正在吃&quot;+stuff)；
+
+}
+
+person.height = 182;
+
+delete person.height;
+
+person.eat(&quot;苹果&quot;)；</code></pre><p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- this的使用</span><br></pre></td></tr></table></figure>
+
+
+<p>   var x = 88;<br>   var obj = {<br>   x:33;<br>   doit:function(){<br>      document.write(“你好”)<br>   }</p>
+<p>   }<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- js表单验证(正则表达式)</span><br></pre></td></tr></table></figure></p>
+<p>   var strform = “12344fsdg@#$%^&amp;”<br>   document.write(strform.match(/\d+/g));</p>
+<p>   var reg = new RegExp(“tm”);<br>   var str = “htmlsd”;<br>   document.write(str.search(reg));</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">   </span><br><span class="line">## Ajax</span><br><span class="line"></span><br><span class="line">   - 创建XMLHttpRequest核心对象</span><br><span class="line">   - 注册监听</span><br><span class="line">   - 建立连接</span><br><span class="line">   - 发送数据</span><br><span class="line">   </span><br><span class="line">#### 创建XMLHttpRequest核心对象</span><br></pre></td></tr></table></figure>
+
+<p>function getXhr(){<br>    var xhr = null;<br>    if(window.XMLHttpRequset){</p>
+<pre><code>    xhr = new XMLHttpRequset();
+
+}
+else{
+    xhr = new ActiveXObject(&quot;Microsoft.XMLHttp&quot;);
+}
+return xhr;</code></pre><p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 注册监听,建立连接,发送数据</span><br></pre></td></tr></table></figure>
+
+<p>function getAjax(url,fn){<br>    var xhr = getXhr();<br>    //3.建立连接</p>
+<pre><code>xhr.open(&quot;GET&quot;,url,true);
+xhr.onreadystatechange=function(){
+    if(xhr.readyState==4&amp;&amp; xhr.status==200){
+        //接收数据并且转化为json格式
+        var datajson = evel(&quot;(&quot;+xhr.reponseText + &quot;)&quot;);
+        //回调函数
+        fn(datajson);
+
+    }
+
+
+}
+
+//发送数据
+xhr.send(null);</code></pre><p>}</p>
+<p>getAjax(“json文件地址”,function(){<br>console.log(data);}<br>);<br>```</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/21/JS相关/" data-id="cjx69xtxz0000i8vtg8umutxi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Python语法(四)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/06/17/Python语法(四)/" class="article-date">
@@ -485,6 +600,10 @@ d = [i*3 for i in range(100) if i&lt;20]</code></li>
       <ul>
         
           <li>
+            <a href="/2019/06/21/JS相关/">JS相关以及Ajax</a>
+          </li>
+        
+          <li>
             <a href="/2019/06/17/Python语法(四)/">Python语法(四)</a>
           </li>
         
@@ -498,10 +617,6 @@ d = [i*3 for i in range(100) if i&lt;20]</code></li>
         
           <li>
             <a href="/2019/06/17/Python语法(一)/">Python语法(一)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/06/15/第一个博客/">第一个博客</a>
           </li>
         
       </ul>
